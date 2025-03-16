@@ -30,7 +30,7 @@
     },
     "versions": [
       {
-        "tag": "0.1",
+        "tag": "0.0",
         "testing": false,
         "labels": {
           "org.nethserver.authorizations": "traefik@any:routeadm cluster:accountconsumer node:fwadm",
