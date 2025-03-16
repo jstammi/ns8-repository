@@ -1,0 +1,45 @@
+[
+  {
+    "id": "gitlab",
+    "name": "GitLab",
+    "description": {
+      "en": "GitLab Installation for Nethserver 8",
+      "de": "GitLab Installation für Nethserver 8"
+    },
+    "logo": "logo.png",
+    "screenshots": [
+      "screenshots/screenshot-welcome.png"
+    ],
+    "categories": [
+      "development"
+    ],
+    "authors": [
+      {
+        "name": "Philip Falliano",
+        "email": "philip.falliano@phillopp.de"
+      },
+      {
+        "name": "jstammi",
+        "email": "jstammi@gmx.net"
+      }
+    ],
+    "docs": {
+      "documentation_url": "https://github.com/jstammi/ns8-gitlab/blob/main/README.md",
+      "bug_url": "https://github.com/jstammi/ns8-gitlab/issues",
+      "code_url": "https://github.com/jstammi/ns8-gitlab"
+    },
+    "versions": [
+      {
+        "tag": "0.1",
+        "testing": false,
+        "labels": {
+          "org.nethserver.authorizations": "traefik@any:routeadm cluster:accountconsumer node:fwadm",
+          "org.nethserver.images": "docker.io/gitlab/gitlab-ce:17.6.5-ce.0 docker.io/gitlab/gitlab-runner:v17.6.1",
+          "org.nethserver.rootfull": "0",
+          "org.nethserver.tcp-ports-demand": "2"
+        }
+      }
+    ],
+    "source": "ghcr.io/jstammi/gitlab"
+  }
+]
